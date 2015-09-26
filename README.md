@@ -3,10 +3,10 @@ andy's blog
 
 ## points
 
-jekyll
+*jekyll
 
-markdown
+*markdown
 
-static blog
+*static blog
 
-github pages
+*github pages
