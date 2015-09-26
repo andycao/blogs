@@ -1,11 +1,27 @@
 ---
 layout: page
-title: About
+title: 关于
+
 permalink: /about/
 ---
+# __所有你想知道的😀__
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+* 技术收藏
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+* 精彩文章搬运
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+* 健身，生活，金融
+
+* 发牢骚
+
+_恩，其他的再添加_
+
+# __想吐槽？__
+
+* Andy Cao
+
+* <a href="mailto:cao_huayu@hotmail.com">cao_huayu@hotmail.com</a>
+
+* <a href="https://github.com/andycao" target="_blank">Github Home</a>
+
+* <a href="http://andyopen.com" target="_blank">个人主页</a>

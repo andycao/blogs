@@ -14,11 +14,13 @@
       </a>
 
       <div class="trigger">
+            <a href="{{ site.url }}" class="page-link">首页</a>
         {% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
+    <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" class="page-link rss-subscribe"><i class="fa fa-rss-square"></i>RSS</a>
       </div>
     </nav>
 

@@ -1,12 +1,13 @@
 # Site settings
-title: Andy's blog
+title: andycao's blog
 email: cao_huayu@hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Not afraid, just keep going and follow my heart!
+  Some dicisions should follow your heart rather than mind
 baseurl: /blogs # the subpath of your site, e.g. /blog/
 url: "http://andyopen.com" # the base hostname & protocol for your site
 twitter_username: cao_huayu
 github_username:  andycao
+andyopen: "http://andyopen.com"
 
 # Build settings
 markdown: kramdown

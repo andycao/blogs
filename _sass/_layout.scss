@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
+    border-top: 5px solid $blue-color-light;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -40,7 +40,9 @@
             margin-left: 20px;
         }
     }
-
+    .rss-subscribe{
+        color: $orange-color;
+    }
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
@@ -234,3 +236,4 @@
         }
     }
 }
+
