@@ -15,9 +15,5 @@ ios 中head中加入meta标签
   <meta name='apple-itunes-app' content='app-id=你的APP-ID'>
 {% endhighlight %}
 
-举例百度贴吧app
-{% highlight html %}
-  <meta name='apple-itunes-app' content='app-id=477927812'>
-{% endhighlight %}
 
 [参考链接](http://www.baidufe.com/item/cc592a4b3382eed8ec6e.html)
