@@ -106,13 +106,22 @@
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 3;
 }
 
 .contact-list,
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    i{
+        min-width: 1rem;
+    }
+    a{
+        color: $grey-color;
+    }
+    a:hover{
+        color: $grey-color-dark;
+    }
 }
 
 .footer-col-wrapper {

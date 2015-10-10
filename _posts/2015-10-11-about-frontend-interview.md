@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  前端面试知识
+title:  前端面试知识搬运
 date:   2015-10-11
 meta :  interview
 categories: frontend
