@@ -23,8 +23,9 @@
     }
 
     img{
-        max-height: 2rem;
-        @include border-radius(1rem);
+        max-height: 3rem;
+        @include border-radius(2rem);
+        margin-right: .8rem;
     }
 }
 
