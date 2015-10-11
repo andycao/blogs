@@ -10,6 +10,29 @@ categories: frontend
 
 *[此文章fork自 markyun](https://github.com/markyun/My-blog/blob/master/Front-end-Developer-Questions/Questions-and-Answers/README.md)*
 
+
+###重点摘抄
+
+- localStorage, sessionStorage, cookie
+
+  cookie 不能超过4k，同源的http链接携带
+
+  ls 持久化， ss 非持久
+
+- 频率与延迟
+
+  多数显示器默认频率是60Hz，即1秒刷新60次，所以理论上最小间隔为1/60＊1000ms ＝ 16.7ms
+
+- 网站优化的思路
+  
+  对普通的网站有一个统一的思路，就是尽量向前端优化、减少数据库操作、减少磁盘IO。
+
+  向前端优化指的是，在不影响功能和体验的情况下，能在浏览器执行的不要在服务端执行，能在缓存服务器上直接返回的不要到应用服务器，程序能直接取得的结果不要到外部取得，本机内能取得的数据不要到远程取，内存能取到的不要到磁盘取，缓存中有的不要去数据库查询。减少数据库操作指减少更新次数、缓存结果减少查询次数、将数据库执行的操作尽可能的让你的程序完成（例如join查询），减少磁盘IO指尽量不使用文件系统作为缓存、减少读写文件次数等。
+
+  程序优化永远要优化慢的部分，换语言是无法“优化”的。
+
+---
+
 ### <a name='preface'>前言</a> ##
 
 本文由我收集总结了一些优质的前端面试题，初学者阅后也要用心钻研其中的原理，重要知识需要系统学习、透彻学习，形成自己的知识链。万不可投机取巧，临时抱佛脚只求面试侥幸混过关是错误的！也是不可能的！不可能的！不可能的！
@@ -104,10 +127,15 @@ categories: frontend
     （2）块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p
 
     （3）常见的空元素：
+    {% highlight html %}
       <br> <hr> <img> <input> <link> <meta>
-      鲜为人知的是：
-      <area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>
+    {% endhighlight %}
 
+      鲜为人知的是：
+
+    {% highlight html %}
+      <area> <base> <col> <command> <embed> <keygen> <param> <source> <track> <wbr>
+    {% endhighlight %}
 
 - 页面导入样式时，使用link和@import有什么区别？
 
@@ -240,7 +268,7 @@ HTML5？
 
     label标签来定义表单控制间的关系,当用户选择该标签时，浏览器会自动将焦点转到和标签相关的表单控件上。
 
-    <label for="Name">Number:</label> <input type=“text“name="Name" id="Name"/> 
+    <label for="Name">Number:</label><input type="text" name="Name" id="Name"/>
 
     <label>Date:<input type="text" name="B" /></label>
  
@@ -327,16 +355,17 @@ HTML5？
 
         确定容器的宽高 宽500 高 300 的层
         设置层的外边距
-  
-         .div {
-        Width:500px ; height:300px;//高度可以不设
-        Margin: -150px 0 0 -250px;
-        position:relative;相对定位
-            background-color:pink;//方便看效果
-        left:50%;
-        top:50%;
-      }
-
+        {% highlight html %}
+        .div {
+          width:500px; 
+          height:300px;//高度可以不设
+          margin: -150px 0 0 -250px;
+          position:relative;相对定位
+          background-color:pink;//方便看效果
+          left:50%;
+          top:50%;
+        }
+        {% endhighlight %}
 
 - 列出display的值，说明他们的作用。position的值， relative和absolute定位原点是？
 
@@ -374,7 +403,9 @@ HTML5？
 
 - 常见兼容性问题？
 
-      * png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.
+  *随着设备的更新，ie的兼容性问题将会越来越少*
+
+    * png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.
 
     * 浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。
 
@@ -418,6 +449,8 @@ HTML5？
 
 
 - 为什么要初始化CSS样式。
+
+  *[normalize.css](http://necolas.github.io/normalize.css/) 是很好的解决方法*
 
     - 因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。
 
@@ -631,16 +664,28 @@ HTML5？
 
       但是有一个总原则，那就是this指的是调用函数的那个对象。
 
-      this一般情况下：是全局对象Global。 作为方法调用，那么this就是指这个对象
+      <del>this一般情况下：是全局对象Global。 作为方法调用，那么this就是指这个对象</del>
 
--  事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
+      *上面一句不对,也不应该这么一般情况*
+
+      如果要判断一个运行中函数的this绑定，就需要找到这个函数的直接调用位置。找到之后可以按照如下4条规则判断this的绑定：
+
+      1. 由new调用？绑定到新创建的对象
+
+      2. 由call或者apply（或者bind）调用？绑定到指定的对象。
+
+      3. 由上下文对象调用？绑定到哪个上下文对象。
+
+      4. 默认：在严格模式下绑定到undefined,否则绑定到全局对象。
+
+
+-  事件是什么？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
 
      1. 我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为。
-     2. 事件处理机制：IE是事件冒泡、火狐是 事件捕获；
+     2. 事件处理机制：IE是事件冒泡、火狐是事件捕获；
      3. ev.stopPropagation();
 
 -  什么是闭包（closure），为什么要用它？
-
 
     执行say667()后,say667()闭包内部变量会存在,而闭包内部函数的内部变量不会存在.使得Javascript的垃圾回收机制GC不会收回say667()所占用的资源，因为say667()的内部函数的执行需要依赖say667()中的变量。这是对闭包作用的非常直白的描述.
 
@@ -657,25 +702,30 @@ HTML5？
 
 
 -  "use strict";是什么意思 ? 使用它的好处和坏处分别是什么？
+    
+    javascript的严格模式，应该放在需要定义区块的开头
 
 -  如何判断一个对象是否属于某个类？
 
-
-
-      使用instanceof （待完善）
+      使用instanceof
 
          if(a instanceof Person){
-             alert('yes');
+             alert('yes a is a Person');
          }
+
 -  new操作符具体干了什么呢?
 
-       1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
-           2、属性和方法被加入到 this 引用的对象中。
-       3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。
+    1. 创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
+    
+    2. 属性和方法被加入到 this 引用的对象中。
+    
+    3. 新创建的对象由 this 所引用，并且最后隐式的返回 this。
 
+    {% highlight js %}
     var obj  = {};
     obj.__proto__ = Base.prototype;
     Base.call(obj);
+    {% endhighlight %}
 
 -  Javascript中，有一个函数，执行时对象查找时，永远不会去查找原型，这个函数是？
 
@@ -1013,12 +1063,9 @@ jQuery中没有提供这个功能，所以你需要先编写两个jQuery的扩�
 
 3. [CSS参考手册](http://css.doyoe.com/)
 
+---
+
+原文结束
 
 
-
-###更新时间:  2015/7/24
-
-  爱机车、爱骑行、爱旅行、爱摄影、爱阅读的前端开发攻城师。
-  
-  我的微博：http://weibo.com/920802999
 
