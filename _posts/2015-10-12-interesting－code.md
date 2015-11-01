@@ -2,8 +2,7 @@
 layout: post
 title:  代码段子
 date:   2015-10-12
-meta :  interesting
-categories: funny
+categories: interesting
 ---
 {% highlight js %}
 (a != b) ? b : a
