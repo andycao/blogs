@@ -11,9 +11,7 @@ andy's blog
 
 * github pages
 
-##
-
-安装方法
+## 安装方法
 
 安装jekyll   gem install jekull
 
@@ -31,3 +29,8 @@ sudo gem install jekyll
 
 执行 jekull server
 
+请注意 本地访问必须是
+
+	localhost:4000/blogs/
+
+最后的/不能少
