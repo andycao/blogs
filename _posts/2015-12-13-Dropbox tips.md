@@ -59,7 +59,7 @@ sublime text2 默认设定存在于
 
 在机器间同步此文件即可
 
-{% highlight commands %}
+{% highlight %}
 	cd ~/Library/Application Support/Sublime Text 2/Packages
 
 	mv User ~/Dropbox/Sublime/  
