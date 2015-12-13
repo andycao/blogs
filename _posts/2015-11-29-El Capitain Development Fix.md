@@ -7,7 +7,7 @@ categories: mac
 
 ## osx El Capitain 开发环境
 
-osx El Capitain 系统更新后原来的开发环境需要修改，一下摘抄如何修改，完成配置
+osx El Capitain 系统更新后原来的开发环境需要修改，以下摘抄如何修改
 
 Xcode developer tools在刚刚安装el capitaion之后是无法使用的，很多命令与工具明明存在于/usr/bin下但就是无法使用，让人非常郁闷
 

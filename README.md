@@ -27,7 +27,9 @@ gem source -l
 
 sudo gem install jekyll
 
-执行 jekull server
+##执行 
+
+jekyll server
 
 请注意 本地访问必须是
 
