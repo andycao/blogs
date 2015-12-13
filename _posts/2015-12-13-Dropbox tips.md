@@ -59,7 +59,7 @@ sublime text2 默认设定存在于
 
 在机器间同步此文件即可
 
-{% highlight %}
+{% highlight bash %}
 	cd ~/Library/Application Support/Sublime Text 2/Packages
 
 	mv User ~/Dropbox/Sublime/  
@@ -72,7 +72,7 @@ sublime text2 默认设定存在于
 
 在其他机器上执行
 
-{% highlight commands %}
+{% highlight bash %}
 	cd ~/Library/Application Support/Sublime Text 2/Packages
 
 	rm -r User  
