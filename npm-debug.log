@@ -1,0 +1,318 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'typescript',
+1 verbose cli   'tsd' ]
+2 info using npm@2.14.3
+3 info using node@v0.12.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'typescript', null ]
+7 verbose cache add spec typescript
+8 silly cache add args [ 'tsd', null ]
+9 verbose cache add spec tsd
+10 silly cache add parsed spec { raw: 'typescript',
+10 silly cache add   scope: null,
+10 silly cache add   name: 'typescript',
+10 silly cache add   rawSpec: '',
+10 silly cache add   spec: '*',
+10 silly cache add   type: 'range' }
+11 silly addNamed typescript@*
+12 verbose addNamed "*" is a valid semver range for typescript
+13 silly addNameRange { name: 'typescript', range: '*', hasData: false }
+14 silly mapToRegistry name typescript
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/typescript
+18 verbose addNameRange registry:https://registry.npmjs.org/typescript not in flight; fetching
+19 silly cache add parsed spec { raw: 'tsd',
+19 silly cache add   scope: null,
+19 silly cache add   name: 'tsd',
+19 silly cache add   rawSpec: '',
+19 silly cache add   spec: '*',
+19 silly cache add   type: 'range' }
+20 silly addNamed tsd@*
+21 verbose addNamed "*" is a valid semver range for tsd
+22 silly addNameRange { name: 'tsd', range: '*', hasData: false }
+23 silly mapToRegistry name tsd
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/tsd
+27 verbose addNameRange registry:https://registry.npmjs.org/tsd not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/typescript
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 00:11:35
+31 verbose request id 36ec92590e0c8384
+32 http request GET https://registry.npmjs.org/typescript
+33 verbose request uri https://registry.npmjs.org/tsd
+34 verbose request no auth needed
+35 info attempt registry request try #1 at 00:11:35
+36 http request GET https://registry.npmjs.org/tsd
+37 http 200 https://registry.npmjs.org/tsd
+38 silly get cb [ 200,
+38 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+38 silly get     etag: '"EQCE8WUU3IHNUSIM5EOW4NEG"',
+38 silly get     'content-type': 'application/json',
+38 silly get     'cache-control': 'max-age=60',
+38 silly get     'content-length': '80613',
+38 silly get     'accept-ranges': 'bytes',
+38 silly get     date: 'Mon, 30 Nov 2015 16:11:39 GMT',
+38 silly get     via: '1.1 varnish',
+38 silly get     age: '58',
+38 silly get     connection: 'keep-alive',
+38 silly get     'x-served-by': 'cache-fra1239-FRA',
+38 silly get     'x-cache': 'HIT',
+38 silly get     'x-cache-hits': '2',
+38 silly get     'x-timer': 'S1448899899.579068,VS0,VE0',
+38 silly get     vary: 'Accept' } ]
+39 verbose get saving tsd to /Users/andycao/.npm/registry.npmjs.org/tsd/.cache.json
+40 silly addNameRange number 2 { name: 'tsd', range: '*', hasData: true }
+41 silly addNameRange versions [ 'tsd',
+41 silly addNameRange   [ '0.1.0',
+41 silly addNameRange     '0.1.1',
+41 silly addNameRange     '0.1.2',
+41 silly addNameRange     '0.2.0',
+41 silly addNameRange     '0.2.1',
+41 silly addNameRange     '0.2.2',
+41 silly addNameRange     '0.3.0',
+41 silly addNameRange     '0.3.1',
+41 silly addNameRange     '0.5.2',
+41 silly addNameRange     '0.5.3',
+41 silly addNameRange     '0.5.5',
+41 silly addNameRange     '0.5.6',
+41 silly addNameRange     '0.5.7',
+41 silly addNameRange     '0.6.0-beta.1',
+41 silly addNameRange     '0.6.0-beta.2',
+41 silly addNameRange     '0.6.0-beta.3',
+41 silly addNameRange     '0.6.0-beta.4',
+41 silly addNameRange     '0.6.0-beta.5',
+41 silly addNameRange     '0.6.0',
+41 silly addNameRange     '0.6.1',
+41 silly addNameRange     '0.6.3',
+41 silly addNameRange     '0.6.4-beta',
+41 silly addNameRange     '0.6.4',
+41 silly addNameRange     '0.6.5-beta',
+41 silly addNameRange     '0.6.5-beta.2',
+41 silly addNameRange     '0.6.5' ] ]
+42 silly addNamed tsd@0.6.5
+43 verbose addNamed "0.6.5" is a plain semver version for tsd
+44 silly mapToRegistry name tsd
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/tsd
+48 verbose addRemoteTarball https://registry.npmjs.org/tsd/-/tsd-0.6.5.tgz not in flight; adding
+49 verbose addRemoteTarball [ 'https://registry.npmjs.org/tsd/-/tsd-0.6.5.tgz',
+49 verbose addRemoteTarball   '34a0b64c1db6a70b3860fe4f5571d9d1357421ad' ]
+50 info retry fetch attempt 1 at 00:11:47
+51 info attempt registry request try #1 at 00:11:47
+52 http fetch GET https://registry.npmjs.org/tsd/-/tsd-0.6.5.tgz
+53 http fetch 200 https://registry.npmjs.org/tsd/-/tsd-0.6.5.tgz
+54 silly fetchAndShaCheck shasum 34a0b64c1db6a70b3860fe4f5571d9d1357421ad
+55 verbose addTmpTarball /tmp/npm-38438-7176cf6b/registry.npmjs.org/tsd/-/tsd-0.6.5.tgz not in flight; adding
+56 verbose addTmpTarball already have metadata; skipping unpack for tsd@0.6.5
+57 silly cache afterAdd tsd@0.6.5
+58 verbose afterAdd /Users/andycao/.npm/tsd/0.6.5/package/package.json not in flight; writing
+59 verbose afterAdd /Users/andycao/.npm/tsd/0.6.5/package/package.json written
+60 http 200 https://registry.npmjs.org/typescript
+61 silly get cb [ 200,
+61 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+61 silly get     etag: '"3UUV7E1OOV6LOWOSVD4N0JOV7"',
+61 silly get     'content-type': 'application/json',
+61 silly get     'cache-control': 'max-age=60',
+61 silly get     'content-length': '230500',
+61 silly get     'accept-ranges': 'bytes',
+61 silly get     date: 'Mon, 30 Nov 2015 16:11:39 GMT',
+61 silly get     via: '1.1 varnish',
+61 silly get     age: '58',
+61 silly get     connection: 'keep-alive',
+61 silly get     'x-served-by': 'cache-fra1247-FRA',
+61 silly get     'x-cache': 'HIT',
+61 silly get     'x-cache-hits': '1',
+61 silly get     'x-timer': 'S1448899899.098529,VS0,VE1',
+61 silly get     vary: 'Accept' } ]
+62 verbose get saving typescript to /Users/andycao/.npm/registry.npmjs.org/typescript/.cache.json
+63 silly addNameRange number 2 { name: 'typescript', range: '*', hasData: true }
+64 silly addNameRange versions [ 'typescript',
+64 silly addNameRange   [ '0.8.0',
+64 silly addNameRange     '0.8.1',
+64 silly addNameRange     '0.8.1-1',
+64 silly addNameRange     '0.8.2',
+64 silly addNameRange     '0.8.3',
+64 silly addNameRange     '0.9.0',
+64 silly addNameRange     '0.9.0-1',
+64 silly addNameRange     '0.9.1',
+64 silly addNameRange     '0.9.1-1',
+64 silly addNameRange     '0.9.5',
+64 silly addNameRange     '0.9.7',
+64 silly addNameRange     '1.0.0',
+64 silly addNameRange     '1.0.1',
+64 silly addNameRange     '1.1.0-1',
+64 silly addNameRange     '1.3.0',
+64 silly addNameRange     '1.4.1',
+64 silly addNameRange     '1.5.0-alpha',
+64 silly addNameRange     '1.5.0-beta',
+64 silly addNameRange     '1.5.3',
+64 silly addNameRange     '1.6.0-dev.20150722.1',
+64 silly addNameRange     '1.6.0-dev.20150723',
+64 silly addNameRange     '1.6.0-dev.20150724',
+64 silly addNameRange     '1.6.0-dev.20150725',
+64 silly addNameRange     '1.6.0-dev.20150726',
+64 silly addNameRange     '1.6.0-dev.20150727',
+64 silly addNameRange     '1.6.0-dev.20150728',
+64 silly addNameRange     '1.6.0-dev.20150729',
+64 silly addNameRange     '1.6.0-dev.20150730',
+64 silly addNameRange     '1.6.0-dev.20150731',
+64 silly addNameRange     '1.6.0-dev.20150801',
+64 silly addNameRange     '1.6.0-dev.20150802',
+64 silly addNameRange     '1.6.0-dev.20150803',
+64 silly addNameRange     '1.6.0-dev.20150804',
+64 silly addNameRange     '1.6.0-dev.20150805',
+64 silly addNameRange     '1.6.0-dev.20150806',
+64 silly addNameRange     '1.6.0-dev.20150807',
+64 silly addNameRange     '1.6.0-dev.20150808',
+64 silly addNameRange     '1.6.0-dev.20150809',
+64 silly addNameRange     '1.6.0-dev.20150810',
+64 silly addNameRange     '1.6.0-dev.20150811',
+64 silly addNameRange     '1.6.0-dev.20150812',
+64 silly addNameRange     '1.6.0-dev.20150813',
+64 silly addNameRange     '1.6.0-dev.20150814',
+64 silly addNameRange     '1.6.0-dev.20150815',
+64 silly addNameRange     '1.6.0-dev.20150816',
+64 silly addNameRange     '1.6.0-dev.20150817',
+64 silly addNameRange     '1.6.0-dev.20150818',
+64 silly addNameRange     '1.6.0-dev.20150819',
+64 silly addNameRange     '1.6.0-dev.20150820',
+64 silly addNameRange     '1.6.0-dev.20150821',
+64 silly addNameRange     '1.6.0-dev.20150822',
+64 silly addNameRange     '1.6.0-dev.20150823',
+64 silly addNameRange     '1.6.0-dev.20150824',
+64 silly addNameRange     '1.6.0-dev.20150825',
+64 silly addNameRange     '1.7.0-dev.20150826',
+64 silly addNameRange     '1.7.0-dev.20150827',
+64 silly addNameRange     '1.7.0-dev.20150828',
+64 silly addNameRange     '1.7.0-dev.20150829',
+64 silly addNameRange     '1.7.0-dev.20150830',
+64 silly addNameRange     '1.7.0-dev.20150831',
+64 silly addNameRange     '1.7.0-dev.20150901',
+64 silly addNameRange     '1.7.0-dev.20150902',
+64 silly addNameRange     '1.6.0-beta',
+64 silly addNameRange     '1.7.0-dev.20150903',
+64 silly addNameRange     '1.7.0-dev.20150904',
+64 silly addNameRange     '1.6.0-dev.20150905',
+64 silly addNameRange     '1.6.0-dev.20150906',
+64 silly addNameRange     '1.6.0-dev.20150907',
+64 silly addNameRange     '1.6.0-dev.20150908',
+64 silly addNameRange     '1.6.0-dev.20150909',
+64 silly addNameRange     '1.6.0-dev.20150910',
+64 silly addNameRange     '1.6.0-dev.20150911',
+64 silly addNameRange     '1.6.0-dev.20150912',
+64 silly addNameRange     '1.6.0-dev.20150913',
+64 silly addNameRange     '1.6.0-dev.20150914',
+64 silly addNameRange     '1.6.0-dev.20150915',
+64 silly addNameRange     '1.7.0-dev.20150916',
+64 silly addNameRange     '1.6.2',
+64 silly addNameRange     '1.7.0-dev.20150917',
+64 silly addNameRange     '1.7.0-dev.20150918',
+64 silly addNameRange     '1.7.0-dev.20150919',
+64 silly addNameRange     '1.7.0-dev.20150920',
+64 silly addNameRange     '1.7.0-dev.20150921',
+64 silly addNameRange     '1.7.0-dev.20150922',
+64 silly addNameRange     '1.7.0-dev.20150923',
+64 silly addNameRange     '1.7.0-dev.20150924',
+64 silly addNameRange     '1.7.0-dev.20150925',
+64 silly addNameRange     '1.7.0-dev.20150926',
+64 silly addNameRange     '1.7.0-dev.20150927',
+64 silly addNameRange     '1.7.0-dev.20150928',
+64 silly addNameRange     '1.7.0-dev.20150929',
+64 silly addNameRange     '1.7.0-dev.20150930',
+64 silly addNameRange     '1.7.0-dev.20151001',
+64 silly addNameRange     '1.7.0-dev.20151002',
+64 silly addNameRange     '1.7.0-dev.20151003',
+64 silly addNameRange     '1.7.0-dev.20151004',
+64 silly addNameRange     '1.7.0-dev.20151005',
+64 silly addNameRange     '1.7.0-dev.20151006',
+64 silly addNameRange     '1.7.0-dev.20151014',
+64 silly addNameRange     '1.7.0-dev.20151015',
+64 silly addNameRange     '1.7.0-dev.20151016',
+64 silly addNameRange     '1.8.0-dev.20151017',
+64 silly addNameRange     '1.8.0-dev.20151018',
+64 silly addNameRange     '1.8.0-dev.20151019',
+64 silly addNameRange     '1.8.0-dev.20151020',
+64 silly addNameRange     '1.8.0-dev.20151021',
+64 silly addNameRange     '1.8.0-dev.20151022',
+64 silly addNameRange     '1.8.0-dev.20151023',
+64 silly addNameRange     '1.8.0-dev.20151024',
+64 silly addNameRange     '1.8.0-dev.20151025',
+64 silly addNameRange     '1.8.0-dev.20151026',
+64 silly addNameRange     '1.8.0-dev.20151027',
+64 silly addNameRange     '1.8.0-dev.20151028',
+64 silly addNameRange     '1.8.0-dev.20151029',
+64 silly addNameRange     '1.8.0-dev.20151030',
+64 silly addNameRange     '1.8.0-dev.20151031',
+64 silly addNameRange     '1.8.0-dev.20151101',
+64 silly addNameRange     '1.8.0-dev.20151102',
+64 silly addNameRange     '1.8.0-dev.20151103',
+64 silly addNameRange     '1.8.0-dev.20151104',
+64 silly addNameRange     '1.8.0-dev.20151105',
+64 silly addNameRange     '1.8.0-dev.20151106',
+64 silly addNameRange     '1.8.0-dev.20151107',
+64 silly addNameRange     '1.8.0-dev.20151108',
+64 silly addNameRange     '1.8.0-dev.20151109',
+64 silly addNameRange     '1.8.0-dev.20151110',
+64 silly addNameRange     '1.8.0-dev.20151111',
+64 silly addNameRange     '1.8.0-dev.20151112',
+64 silly addNameRange     '1.8.0-dev.20151113',
+64 silly addNameRange     '1.8.0-dev.20151114',
+64 silly addNameRange     '1.8.0-dev.20151115',
+64 silly addNameRange     '1.8.0-dev.20151116',
+64 silly addNameRange     '1.8.0-dev.20151117',
+64 silly addNameRange     '1.8.0-dev.20151118',
+64 silly addNameRange     '1.8.0-dev.20151119',
+64 silly addNameRange     '1.8.0-dev.20151120',
+64 silly addNameRange     '1.8.0-dev.20151121',
+64 silly addNameRange     '1.8.0-dev.20151122',
+64 silly addNameRange     '1.8.0-dev.20151123',
+64 silly addNameRange     '1.8.0-dev.20151124',
+64 silly addNameRange     '1.8.0-dev.20151125',
+64 silly addNameRange     '1.8.0-dev.20151126',
+64 silly addNameRange     '1.8.0-dev.20151127',
+64 silly addNameRange     '1.8.0-dev.20151128',
+64 silly addNameRange     '1.8.0-dev.20151129',
+64 silly addNameRange     '1.8.0-dev.20151130' ] ]
+65 silly addNamed typescript@1.6.2
+66 verbose addNamed "1.6.2" is a plain semver version for typescript
+67 silly mapToRegistry name typescript
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/typescript
+71 verbose addRemoteTarball https://registry.npmjs.org/typescript/-/typescript-1.6.2.tgz not in flight; adding
+72 verbose addRemoteTarball [ 'https://registry.npmjs.org/typescript/-/typescript-1.6.2.tgz',
+72 verbose addRemoteTarball   '5b27254abeb111027cbf9450d3431bc5843191dd' ]
+73 info retry fetch attempt 1 at 00:11:58
+74 info attempt registry request try #1 at 00:11:58
+75 http fetch GET https://registry.npmjs.org/typescript/-/typescript-1.6.2.tgz
+76 http fetch 200 https://registry.npmjs.org/typescript/-/typescript-1.6.2.tgz
+77 silly fetchAndShaCheck shasum 5b27254abeb111027cbf9450d3431bc5843191dd
+78 verbose stack Error: shasum check failed for /tmp/npm-38438-7176cf6b/registry.npmjs.org/typescript/-/typescript-1.6.2.tgz
+78 verbose stack Expected: 5b27254abeb111027cbf9450d3431bc5843191dd
+78 verbose stack Actual:   5017ff6894fd3c374204976135ac79b84c17f8c5
+78 verbose stack From:     https://registry.npmjs.org/typescript/-/typescript-1.6.2.tgz
+78 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/sha/index.js:38:8
+78 verbose stack     at ReadStream.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/sha/index.js:85:7)
+78 verbose stack     at ReadStream.emit (events.js:129:20)
+78 verbose stack     at _stream_readable.js:908:16
+78 verbose stack     at process._tickCallback (node.js:355:11)
+79 verbose cwd /Users/andycao/Sites/blogs
+80 error Darwin 15.0.0
+81 error argv "node" "/usr/local/bin/npm" "install" "-g" "typescript" "tsd"
+82 error node v0.12.7
+83 error npm  v2.14.3
+84 error shasum check failed for /tmp/npm-38438-7176cf6b/registry.npmjs.org/typescript/-/typescript-1.6.2.tgz
+84 error Expected: 5b27254abeb111027cbf9450d3431bc5843191dd
+84 error Actual:   5017ff6894fd3c374204976135ac79b84c17f8c5
+84 error From:     https://registry.npmjs.org/typescript/-/typescript-1.6.2.tgz
+85 error If you need help, you may report this error at:
+85 error     <https://github.com/npm/npm/issues>
+86 verbose exit [ 1, true ]
