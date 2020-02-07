@@ -19,7 +19,7 @@ andy's blog
 
 可以找一个国内的gem 实时同步
 
-天假
+添加source
 gem source -a https://rubygems.org/   (这里结尾的/不能省略，地址一定要打对)
 
 gem source -l
