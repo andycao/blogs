@@ -18,8 +18,6 @@ _恩，其他的再添加_
 
 # __想吐槽？__
 
-* Andy Cao
-
 * <a href="mailto:cao_huayu@hotmail.com">cao_huayu@hotmail.com</a>
 
 * <a href="https://github.com/andycao" target="_blank">Github Home</a>

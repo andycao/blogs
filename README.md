@@ -17,11 +17,10 @@ andy's blog
 
 如果gem无法安装，是因为国内把rubygems.org屏蔽了
 
-使用taobao的gem 实时同步
+可以找一个国内的gem 实时同步
 
-gem source --remove https://rubygems.org/   (这里结尾的/不能省略，地址一定要打对)
-
-gem source -a https://ruby.taobao.org/
+天假
+gem source -a https://rubygems.org/   (这里结尾的/不能省略，地址一定要打对)
 
 gem source -l
 
