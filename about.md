@@ -22,4 +22,4 @@ _恩，其他的再添加_
 
 * <a href="https://github.com/andycao" target="_blank">Github Home</a>
 
-* <a href="http://andyopen.com" target="_blank">个人主页</a>
+* <a href="http://andycao.github.io" target="_blank">个人主页</a>
