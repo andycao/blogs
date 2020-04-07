@@ -1,0 +1,16 @@
+{
+    "name": "blogs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:andycao/blogs.git",
+    "author": "<huayu.cao@pintec.com>",
+    "license": "MIT",
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs"
+    },
+    "devDependencies": {
+        "@vuepress/plugin-back-to-top": "^1.4.0",
+        "vuepress": "^1.4.0"
+    }
+}
